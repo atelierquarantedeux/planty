@@ -1,0 +1,115 @@
+/* La classe 'hover-effect' permettra de créer un effet de zoom quand l'on passera la souris par dessus les elements images enfants  */
+.hover-effect img {
+    transition: all 0.42s ease-in-out;
+    transform: scale(1) translateY(0px);
+ }
+
+ .hover-effect img:hover {
+    transition: all 0.42s ease-in-out;
+    transform: scale(1.05) translateY(-10px);
+ }
+
+/* HEADER */
+
+span.text-wrap{
+    font-size: 18px;
+}
+
+li.menu-item a {
+   color: black !important;
+   display: inline-block;
+   padding: 10px 25px;
+   background-color: white;
+   
+   text-align: center;
+}
+
+
+li.menu-item.current-menu-item a {
+   color: white !important;
+   background-color: #dc9f96;
+   text-decoration: none !important;
+}
+
+li.menu-item a:hover{
+    color: white !important;
+    background-color: #c02e44;
+    text-decoration: none !important; 
+}
+
+#site-header-inner{
+    height: 65px;
+}
+
+/*p {    
+    margin-top: 62px;
+    margin-bottom: 100px;
+    margin-left: 66px;
+    margin-right: 66px;
+}*/
+
+h1, h2{
+    margin-top: 20px;
+    
+}
+
+div.wp-element-button a:hover{
+    color: white !important;
+    background-color: #c02e44;
+    text-decoration: none !important; 
+}
+
+li.menu-item a:hover{
+    color: white !important;
+    background-color: #c02e44;
+    text-decoration: none !important; 
+}
+
+.frm_form_fields .frm_fields_container{
+    margin-top: 22px;
+    margin-bottom: 42px;
+    margin-left: 160px !important;
+    margin-right: 160px !important;
+}
+
+.frm_submit .frm_button_submit{
+    margin-left: 60px
+}
+
+#copyright{
+    font-size: 22px;
+}
+
+.wp-block-column{
+    display: flex;
+
+}
+
+body .is-layout-flex{
+    display: flex;
+    align-content: center;
+}
+
+#wpforms-submit-259.wpform-submit{
+    background: #c02e44;
+    display: flex;
+    align-content: center;
+}
+
+/*<?php
+
+add_filter( 'wp_nav_menu_items','add_admin_link', 10, 2 );
+
+function add_admin_link( $items, $args ) {
+
+    if (is_user_logged_in() && $args->theme_location == 'menu-1') {
+
+        $items .= '<li><a href="'. get_admin_url() .'">Admin</a></li>';
+
+    }
+
+    return $items;
+
+}
+
+?>*/
