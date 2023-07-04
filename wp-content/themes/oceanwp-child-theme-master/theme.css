@@ -25,21 +25,19 @@ li.menu-item a {
 }
 
 
-li.menu-item.current-menu-item a {
+li.menu-item.menu-item-60 a {
    color: white !important;
    background-color: #dc9f96;
    text-decoration: none !important;
 }
 
-li.menu-item a:hover{
+li.menu-item.menu-item-60 a:hover{
     color: white !important;
     background-color: #c02e44;
     text-decoration: none !important; 
 }
 
-#site-header-inner{
-    height: 65px;
-}
+
 
 /*p {    
     margin-top: 62px;
@@ -53,7 +51,7 @@ h1, h2{
     
 }
 
-div.wp-element-button a:hover{
+/*div.wp-element-button a:hover{
     color: white !important;
     background-color: #c02e44;
     text-decoration: none !important; 
@@ -63,7 +61,7 @@ li.menu-item a:hover{
     color: white !important;
     background-color: #c02e44;
     text-decoration: none !important; 
-}
+}*/
 
 .frm_form_fields .frm_fields_container{
     margin-top: 22px;
@@ -96,20 +94,53 @@ body .is-layout-flex{
     align-content: center;
 }
 
-/*<?php
 
-add_filter( 'wp_nav_menu_items','add_admin_link', 10, 2 );
+  
+  .container {
+    position: relative;
+    display: flex;
+  }
+  
+  #second {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #main_1 {
+    font-size: 31px;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #plus {
+    font-size: 26px;
+    color: white;
+    height: 35px;
+    width: 42px;
+    background-color: #dc9f96;
+    border-bottom: solid 1px white;
+    border-radius: 0px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #moins {
+    font-size: 26px;
+    color: white;
+    height: 35px;
+    width: 42px;
+    background-color: #dc9f96;
+    border-radius: 0px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-function add_admin_link( $items, $args ) {
-
-    if (is_user_logged_in() && $args->theme_location == 'menu-1') {
-
-        $items .= '<li><a href="'. get_admin_url() .'">Admin</a></li>';
-
-    }
-
-    return $items;
-
-}
-
-?>*/
+  
