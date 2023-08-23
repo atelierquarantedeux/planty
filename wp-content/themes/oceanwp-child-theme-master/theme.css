@@ -143,5 +143,22 @@ body .is-layout-flex{
     align-items: center;
   }
 
+   /* contact form for "Commander" */
+
+   .btn-commander{
+    display: flex;
+    
+    justify-content: center;
+   }
+
+   .command{
+    display: flex;
+   }
+
+   .identity{
+    display: flex;
+   }
+
+   /* footer */
    
   
